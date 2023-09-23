@@ -2,7 +2,7 @@
 import Phone from "../Phone/Phone";
 
 const Phones = ({phones}) => {
-    console.log(phones);
+    
     
     return (
         <div className="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3  ">

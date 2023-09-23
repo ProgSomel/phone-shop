@@ -8,22 +8,22 @@ const Header = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <div>
+    <div className="shadow-lg h-[200px] md:h-12 mt-5  px-8">
       <nav className="md:flex justify-between items-center text-center">
         {/* logo  */}
         <div>
           <Logo></Logo>
         </div>
         <div>
-          <div className=" flex justify-center my-3  md:hidden" onClick={() => setOpen(!open)}>
+          <div className=" flex justify-center my-3  md:hidden" onClick={() => setOpen(!open) }>
             {open === true ? (
               <AiOutlineClose></AiOutlineClose>
             ) : (
               <AiOutlineMenu></AiOutlineMenu>
             )}
           </div>
-          <ul className={`md:flex md:gap-8   absolute duration-1000 md:static ${open ? 'top-24 left-32  md:left-52 ':'-top-60 left-32'}`}>
-            <li>
+          <ul className={`md:flex  md:gap-8   absolute duration-1000 md:static ${open ? 'top-20 left-32  md:left-52 mt-10 ':'-top-60 left-32'}`}>
+            <li className="">
               <NavLink
                 to="/"
                 className={({ isActive, isPending }) =>

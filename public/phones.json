@@ -1,0 +1,110 @@
+[
+  {
+      "id": "1",
+      "image": "https://static-01.daraz.com.bd/p/b802b8ebb0a784ec791caa75e2d4de66.jpg",
+      "phone_name": "iPhone 14 Pro Max",
+      "brand_name": "Apple",
+      "price": 799.99,
+      "rating": 4.7,
+      "description": "The iPhone 14 Pro Max, manufactured by Apple, is a high-end smartphone known for its exceptional performance and cutting-edge features. With a sleek design and a large display, it offers a premium user experience. Packed with powerful hardware and a stunning camera system, it's a top choice for mobile enthusiasts."
+  },
+  {
+      "id": "2",
+      "image": "https://static-01.daraz.com.bd/p/1ec88cbfff48b223f1dbb92ce20df4ec.jpg",
+      "phone_name": "iPhone 14 Pro",
+      "brand_name": "Apple",
+      "price": 899.99,
+      "rating": 4.9,
+      "description": "The iPhone 14 Pro, from the renowned brand Apple, is a flagship smartphone that combines style and performance. It boasts a high-resolution display and a top-notch camera system, making it a favorite among photography enthusiasts and professionals."
+  },
+  {
+      "id": "3",
+      "image": "https://static-01.daraz.com.bd/p/986dd21bae23af5b4186e0029dce42a7.jpg",
+      "phone_name": "iPhone 12",
+      "brand_name": "Apple",
+      "price": 999.99,
+      "rating": 3.5,
+      "description": "The iPhone 12, an offering from Apple, is a reliable and stylish smartphone. It features a sleek design, powerful performance, and a versatile camera system, making it a popular choice for those seeking a balanced mobile experience."
+  },
+  {
+      "id": "4",
+      "image": "https://static-01.daraz.com.bd/p/285dfcce48daca08bbff06e6fb340200.jpg",
+      "phone_name": "iPhone 12 Pro Max",
+      "brand_name": "Apple",
+      "price": 699.99,
+      "rating": 4.5,
+      "description": "The iPhone 12 Pro Max, created by Apple, is a flagship device known for its stunning display and impressive camera capabilities. It offers exceptional performance and is favored by users who demand the best in both form and function."
+  },
+  {
+      "id": "5",
+      "image": "https://static-01.daraz.com.bd/p/ed234dd8498445e98c74028ddd0f966b.jpg",
+      "phone_name": "Samsung Galaxy S21",
+      "brand_name": "Samsung",
+      "price": 899.99,
+      "rating": 2.9,
+      "description": "The Samsung Galaxy S21, a product of Samsung, is a feature-packed smartphone with a sleek design and a powerful chipset. While it offers excellent performance, its camera capabilities and display quality make it a great choice for multimedia enthusiasts."
+  },
+  {
+      "id": "6",
+      "image": "https://static-01.daraz.com.bd/p/89a1dda89c94b5bdbe0acbe205fc799c.jpg",
+      "phone_name": "Samsung Galaxy F23",
+      "brand_name": "Samsung",
+      "price": 1099.99,
+      "rating": 5.0,
+      "description": "The Samsung Galaxy F23, part of Samsung's lineup, is a premium smartphone with cutting-edge features. It stands out with its high-resolution display, powerful performance, and top-notch camera system, making it a top choice for tech enthusiasts."
+  },
+  {
+      "id": "7",
+      "image": "https://static-01.daraz.com.bd/p/3fc5a8e21be21833bd0bcf2b8382fddc.jpg",
+      "phone_name": "Samsung Galaxy A33",
+      "brand_name": "Samsung",
+      "price": 999.99,
+      "rating": 4.7,
+      "description": "The Samsung Galaxy A33, a Samsung offering, is a mid-range smartphone with a focus on performance and value. It provides a smooth user experience and boasts a capable camera setup, making it a well-rounded choice."
+  },
+  {
+      "id": "8",
+      "image": "https://static-01.daraz.com.bd/p/ed234dd8498445e98c74028ddd0f966b.jpg",
+      "phone_name": "Samsung Galaxy Note 5",
+      "brand_name": "Samsung",
+      "price": 999.99,
+      "rating": 4.7,
+      "description": "The Samsung Galaxy Note 5, from the Samsung Galaxy Note series, is a productivity-focused smartphone known for its large display and stylus support. It offers impressive multitasking capabilities and a feature-rich experience."
+  },
+  {
+      "id": "9",
+      "image": "https://static-01.daraz.com.bd/p/627f7b3da3437c31a24cb6d1a9eb51bd.jpg",
+      "phone_name": "Xiaomi Redmi 11",
+      "brand_name": "Xiaomi",
+      "price": 1199.99,
+      "rating": 4.8,
+      "description": "The Xiaomi Redmi 11, from the renowned Xiaomi brand, is a budget-friendly smartphone with a focus on value and performance. It offers a feature-rich experience, a reliable camera system, and long battery life."
+  },
+  {
+      "id": "10",
+      "image": "https://static-01.daraz.com.bd/p/ff3deae774e41a9491019b2d893d5a4c.jpg",
+      "phone_name": "Xiaomi Redmi Note",
+      "brand_name": "Xiaomi",
+      "price": 1299.99,
+      "rating": 3.9,
+      "description": "The Xiaomi Redmi Note, part of the Redmi series by Xiaomi, is a mid-range smartphone that offers a balance between affordability and performance. It features a large display and a capable camera, making it suitable for various user needs."
+  },
+  {
+      "id": "11",
+      "image": "https://static-01.daraz.com.bd/p/30e0eae11e7cfcf2924cf41d283553ae.jpg",
+      "phone_name": "Xiaomi Redmi 10A",
+      "brand_name": "Xiaomi",
+      "price": 1099.99,
+      "rating": 4.7,
+      "description": "The Xiaomi Redmi 10A, part of Xiaomi's Redmi series, is an affordable smartphone designed for users on a budget. It offers a reliable performance, a decent camera setup, and a user-friendly experience."
+  },
+  {
+    "id": "12",
+    "image": "https://static-01.daraz.com.bd/p/19b133906213bcccda357d36de841f97.jpg",
+    "phone_name": "Redmi 12C",
+    "brand_name": "Xiaomi",
+    "price": 1399.99,
+    "rating": 4.8,
+    "description": "The Redmi 12C, part of Xiaomi's lineup, is a budget-friendly smartphone that offers a great balance between price and performance. With its feature-rich user experience, capable camera system, and reliable hardware, it's a solid choice for those looking for value."
+}
+]

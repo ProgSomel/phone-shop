@@ -36,7 +36,7 @@ const Phone = ({ phone }) => {
       </div>
 
       <div className="p-6 pt-0 mt-12 lg:mt-0">
-        <Link to={`/phones/${id}`}>
+        <Link to={`/phones/${id}`} state={phone_name}>
           <button className=" h-full w-full bg-blue-400">See Details</button>
         </Link>
       </div>

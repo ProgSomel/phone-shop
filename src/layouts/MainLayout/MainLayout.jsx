@@ -5,6 +5,7 @@ import { useEffect } from "react";
 const MainLayout = () => {
 
     const loc = useLocation();
+    console.log(loc);
 
     useEffect(()=> {
         if(loc.pathname === '/') {
@@ -12,6 +13,9 @@ const MainLayout = () => {
         }
         else {
             document.title= `SRH Phone ${loc.pathname.replace("/", "-")}`;
+        }
+        if(loc.state) {
+            document.title= `${loc.state}`;
         }
     }, [loc.pathname])
 

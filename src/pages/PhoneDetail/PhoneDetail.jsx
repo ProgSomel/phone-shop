@@ -6,32 +6,45 @@ const PhoneDetail = ({ phone }) => {
   const { id, image, phone_name, price, rating, description } = phone;
 
   const handleAddtoCart = () => {
-    const cartArray = [];
+    const addedfavouritesArray = [];
 
-    const itemFromCart = JSON.parse(localStorage.getItem("favourites"));
+    const favoriteItems = JSON.parse(localStorage.getItem("favourites"));
 
-    if (!itemFromCart) {
-      cartArray.push(phone);
-      localStorage.setItem("favourites", JSON.stringify(cartArray));
-      swal("Good job!", "Products added successfully!", "success");
-    } else {
-      const isExits = itemFromCart.find((item) => item.id === id);
+    //jokhon kisu nai tokhon e if vitor dhukba
+    if (!favoriteItems) {
+      addedfavouritesArray.push(phone);
+      localStorage.setItem("favourites", JSON.stringify(addedfavouritesArray));
+      swal("Good job!", `${phone_name} added successfully`, "success");
+    } 
+    
+    else {
 
-      if (isExits) {
-        swal("Error!", "Item already Added !", "error");
+
+      const isExits = favoriteItems.find((phone) => phone.id === id);
+
+      
+      if (!isExits) {
+
+        addedfavouritesArray.push(...favoriteItems, phone);
+        localStorage.setItem("favourites", JSON.stringify(addedfavouritesArray));
+        swal("Good job!", `${phone_name} added successfully`, "success");
+       
       } else {
-        cartArray.push(...cartArray, phone);
-        localStorage.setItem("favourites", JSON.stringify(cartArray));
-        swal("Good job!", "Products added successfully!", "success");
+        swal("Error!", `${phone_name} is already Added !`, "error");
       }
+
+    
+
+
     }
+
   };
 
   return (
-    <div className="flex justify-center items-center lg:h-screen mt-5">
-      <div className="relative w-[600px] h-full flex  flex-col rounded-xl bg-gray-400 bg-clip-border text-gray-700 shadow-md">
-        <div className="relative mx-4 mt-4 overflow-hidden rounded-xl bg-green-400 bg-clip-border text-gray-700">
-          <img src={image} className="  w-full object-cover" />
+    <div className="flex justify-center items-center  mt-5">
+      <div className="relative w-[600px]  flex  flex-col rounded-xl bg-gray-400 bg-clip-border text-gray-700 shadow-md">
+        <div className=" h-[600px] ">
+          <img src={image} className="  w-full h-[600px]  object-cover" />
         </div>
         <div className="px-6 py-2 ">
           <div className=" flex items-center justify-between mt-8">
@@ -51,7 +64,7 @@ const PhoneDetail = ({ phone }) => {
         <div className="p-6 pt-0">
           <Link>
             <button onClick={handleAddtoCart} className=" w-full bg-blue-400">
-              Add to Cart
+              Add to Favourite
             </button>
           </Link>
         </div>

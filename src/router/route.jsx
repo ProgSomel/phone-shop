@@ -6,6 +6,7 @@ import Error from "../components/Error/Error";
 import PhoneDetails from "../pages/PhoneDetails/PhoneDetails";
 import Favourites from "../pages/Favourites/Favourites";
 
+
 const myCreatedRoute = createBrowserRouter([
     {
         path: '/',
@@ -31,6 +32,7 @@ const myCreatedRoute = createBrowserRouter([
                 path:'/favourites',
                 element: <Favourites></Favourites>
             }
+            
         ]
     }
 ]);

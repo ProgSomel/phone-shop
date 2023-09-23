@@ -1,10 +1,11 @@
 /* eslint-disable react/prop-types */
 
+import Rating from "react-rating";
 import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Phone = ({ phone }) => {
-  const { id, image, phone_name, price, rating, description } =
-    phone;
+  const { id, image, phone_name, price, rating, description } = phone;
 
   return (
     <div className="relative flex h-[600px] w-full flex-col rounded-xl bg-gray-400 bg-clip-border text-gray-700 shadow-md">
@@ -23,12 +24,20 @@ const Phone = ({ phone }) => {
         <p className="block font-sans text-sm font-normal leading-normal text-gray-700 antialiased opacity-75">
           {description}
         </p>
-        <p className="mt-5">Ratings: {rating}</p>
+        <p className="mt-5">
+          
+        <Rating
+        emptySymbol={<FontAwesomeIcon icon={['far', 'star']} />} // Use FontAwesome for empty star
+        fullSymbol={<FontAwesomeIcon icon={['fas', 'star']} />}   // Use FontAwesome for full star
+        initialRating={rating}
+        readonly
+      />
+        </p>
       </div>
 
       <div className="p-6 pt-0 mt-12 lg:mt-0">
-        <Link to={`/phones/${id}`} >
-            <button className=" h-full w-full bg-blue-400">See Details</button>
+        <Link to={`/phones/${id}`}>
+          <button className=" h-full w-full bg-blue-400">See Details</button>
         </Link>
       </div>
     </div>
